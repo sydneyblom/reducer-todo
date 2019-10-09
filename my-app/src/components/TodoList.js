@@ -4,7 +4,6 @@ import Todo from './TodoItem';
 import TodoForm from './Form';
 import { reducer, initialTodoState } from '../reducers/todoReducer'
 
-import { Card } from 'semantic-ui-react'
 
 const TodoList = () => {
     const [state, dispatch] = useReducer(reducer, initialTodoState);

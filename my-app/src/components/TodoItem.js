@@ -10,15 +10,16 @@ export default function Todo({todo, dispatch}) {
   }
 
   return (
+    <div className='card-container'>
+    <Card style= {{margin:'5px'}}>
     <div 
       onClick={toggleCompleted} 
       className={`todo${todo.completed ? " completed" : ""}`}>
-           <div className='card-container'>
-        <Card style= {{margin:'5px'}}>
+
       <p>{todo.item}</p>
-      </Card>
-      </div>
     </div>
+    </Card>
+      </div>
   );
   }
     
